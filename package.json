@@ -10,7 +10,7 @@
     "url": "http://github.com/webpack/tapable.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.4.4",
     "babel-jest": "^24.8.0",
     "codecov": "^3.5.0",
@@ -28,7 +28,7 @@
   "main": "lib/index.js",
   "types": "./tapable.d.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest ./lib/__tests__/Hook.spec.js",
     "travis": "yarn pretty-lint && jest --coverage && codecov",
     "pretty-lint": "prettier --check lib/*.js lib/__tests__/*.js",
     "pretty": "prettier --loglevel warn --write lib/*.js lib/__tests__/*.js"
